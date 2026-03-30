@@ -1,0 +1,62 @@
+## .NET / C#
+
+# Build outputs
+[Bb]in/
+[Oo]bj/
+out/
+publish/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# Test results
+TestResults/
+coverage/
+*.trx
+*.coveragexml
+
+# Entity Framework migrations (generated) — keep Migrations/ tracked
+# but ignore designer stubs if generated locally
+*.migrations.designer.tmp
+
+# Secrets & config overrides — never commit these
+appsettings.*.local.json
+secrets.json
+.env
+.env.*
+
+# Azure / deployment
+*.PublishSettings
+*.azurePubxml
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+
