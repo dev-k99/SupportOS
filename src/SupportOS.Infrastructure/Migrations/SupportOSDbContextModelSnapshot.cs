@@ -198,52 +198,6 @@ namespace SupportOS.Infrastructure.Migrations
                     b.HasIndex("Status");
 
                     b.ToTable("Tickets");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("cccccccc-cccc-cccc-cccc-cccccccccccc"),
-                            CategoryId = new Guid("aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"),
-                            CreatedAt = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
-                            CustomerId = new Guid("33333333-3333-3333-3333-333333333333"),
-                            Description = "The laptop screen flickers intermittently when running on battery power.",
-                            Priority = 1,
-                            SLADueAt = new DateTime(2025, 1, 2, 0, 0, 0, 0, DateTimeKind.Utc),
-                            Status = 0,
-                            Title = "Laptop screen flickering",
-                            UpdatedAt = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc)
-                        },
-                        new
-                        {
-                            Id = new Guid("dddddddd-dddd-dddd-dddd-dddddddddddd"),
-                            AssignedAgentId = new Guid("22222222-2222-2222-2222-222222222222"),
-                            CategoryId = new Guid("bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb"),
-                            CreatedAt = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
-                            CustomerId = new Guid("33333333-3333-3333-3333-333333333333"),
-                            Description = "Corporate VPN disconnects automatically after approximately 60 minutes of use.",
-                            FirstResponseAt = new DateTime(2025, 1, 1, 0, 30, 0, 0, DateTimeKind.Utc),
-                            Priority = 2,
-                            SLADueAt = new DateTime(2025, 1, 1, 8, 0, 0, 0, DateTimeKind.Utc),
-                            Status = 1,
-                            Title = "VPN connection drops every hour",
-                            UpdatedAt = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc)
-                        },
-                        new
-                        {
-                            Id = new Guid("eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee"),
-                            AssignedAgentId = new Guid("22222222-2222-2222-2222-222222222222"),
-                            CategoryId = new Guid("bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb"),
-                            CreatedAt = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
-                            CustomerId = new Guid("33333333-3333-3333-3333-333333333333"),
-                            Description = "Outlook is not syncing new emails. Inbox shows emails from 2 days ago as the latest.",
-                            FirstResponseAt = new DateTime(2025, 1, 1, 1, 0, 0, 0, DateTimeKind.Utc),
-                            Priority = 0,
-                            ResolvedAt = new DateTime(2025, 1, 1, 6, 0, 0, 0, DateTimeKind.Utc),
-                            SLADueAt = new DateTime(2025, 1, 3, 0, 0, 0, 0, DateTimeKind.Utc),
-                            Status = 3,
-                            Title = "Email client not syncing",
-                            UpdatedAt = new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc)
-                        });
                 });
 
             modelBuilder.Entity("SupportOS.Domain.Entities.User", b =>

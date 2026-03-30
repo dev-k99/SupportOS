@@ -144,16 +144,6 @@ namespace SupportOS.Infrastructure.Migrations
                     { new Guid("bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb"), new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), 8, "Software", new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc) }
                 });
 
-            migrationBuilder.InsertData(
-                table: "Tickets",
-                columns: new[] { "Id", "AssignedAgentId", "CategoryId", "CreatedAt", "CustomerId", "Description", "FirstResponseAt", "Priority", "ResolvedAt", "SLADueAt", "Status", "Title", "UpdatedAt" },
-                values: new object[,]
-                {
-                    { new Guid("cccccccc-cccc-cccc-cccc-cccccccccccc"), null, new Guid("aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"), new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), new Guid("33333333-3333-3333-3333-333333333333"), "The laptop screen flickers intermittently when running on battery power.", null, 1, null, new DateTime(2025, 1, 2, 0, 0, 0, 0, DateTimeKind.Utc), 0, "Laptop screen flickering", new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc) },
-                    { new Guid("dddddddd-dddd-dddd-dddd-dddddddddddd"), new Guid("22222222-2222-2222-2222-222222222222"), new Guid("bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb"), new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), new Guid("33333333-3333-3333-3333-333333333333"), "Corporate VPN disconnects automatically after approximately 60 minutes of use.", new DateTime(2025, 1, 1, 0, 30, 0, 0, DateTimeKind.Utc), 2, null, new DateTime(2025, 1, 1, 8, 0, 0, 0, DateTimeKind.Utc), 1, "VPN connection drops every hour", new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc) },
-                    { new Guid("eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee"), new Guid("22222222-2222-2222-2222-222222222222"), new Guid("bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb"), new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc), new Guid("33333333-3333-3333-3333-333333333333"), "Outlook is not syncing new emails. Inbox shows emails from 2 days ago as the latest.", new DateTime(2025, 1, 1, 1, 0, 0, 0, DateTimeKind.Utc), 0, new DateTime(2025, 1, 1, 6, 0, 0, 0, DateTimeKind.Utc), new DateTime(2025, 1, 3, 0, 0, 0, 0, DateTimeKind.Utc), 3, "Email client not syncing", new DateTime(2025, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc) }
-                });
-
             migrationBuilder.CreateIndex(
                 name: "IX_Comments_AuthorId",
                 table: "Comments",
